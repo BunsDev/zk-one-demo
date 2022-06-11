@@ -9,12 +9,14 @@ import { Container } from '../components/Container'
 import { Main } from '../components/Main'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { CTA } from '../components/CTA'
+// import { NavBar } from '../components/NavBar'
 import { Footer } from '../components/Footer'
 import { Fund } from '../components/Fund'
 import { useEffect, useState } from 'react'
 import { getETHPrice, getWEIPriceInUSD } from "../../lib/getETHPrice";
 import factory from "../../smart-contract/factory";
 import Campaign from "../../smart-contract/campaign";
+
 
 export async function getServerSideProps(context) {
   const campaigns = await factory.methods.getDeployedCampaigns().call();
@@ -57,6 +59,7 @@ const Index = ({ campaigns }) => {
    <Container height="100vh">
     <Hero />
     {/* <Main> */}
+    
       <Text color="text">
         Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code> +{' '}
         <Code>TypeScript</Code>.

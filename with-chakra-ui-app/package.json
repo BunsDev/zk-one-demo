@@ -14,8 +14,13 @@
     "framer-motion": "^6",
     "next": "latest",
     "react": "^17.0.2",
+    "react-confetti": "^6.1.0",
     "react-dom": "^17.0.2",
-    "truffle-hdwallet-provider": "^1.0.17"
+    "react-hook-form": "^7.32.0",
+    "react-use": "^17.4.0",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "use-wallet": "0.13.4",
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "@types/node": "^14.6.0",
